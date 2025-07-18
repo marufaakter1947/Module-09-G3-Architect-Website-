@@ -99,7 +99,39 @@ main > section{
 }
 
 /* -----------Features will enjoy------------ */
-
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-enjoy{
+    gap: 146px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-architect img{
+    width: 100%;
+}
 
 /* ----------------Some fact related styles-------- */
 .facts-container{
@@ -160,11 +192,19 @@ main > section{
     justify-items: center;
     gap: 50px;
 }
+.features-enjoy{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+#experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 }
 
 /* -------medium size device------------- */
 @media screen and (min-width:577px) and (max-width:992px){
-    .teams{
+    .teams,.features-enjoy{
         flex-direction: column;
     }
     .features{
@@ -175,4 +215,8 @@ main > section{
         gap: 50px;
         justify-items: center;
     }
+    #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 }
